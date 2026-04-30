@@ -1,0 +1,84 @@
+/* Container centers the form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f8f6fb; /* soft lavender background */
+  padding: 40px;
+}
+
+/* Card style */
+.form-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(98, 0, 238, 0.15); /* subtle purple shadow */
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  border-top: 6px solid #6a0dad; /* deep purple accent */
+}
+
+/* Headings */
+.form-card h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #4b0082; /* indigo purple */
+}
+
+.form-card p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Form fields */
+.form-field {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3c1361; /* dark purple for labels */
+}
+
+.form-field input,
+.form-field select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 6px rgba(106, 13, 173, 0.3);
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  background: #6a0dad; /* main purple */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #4b0082; /* darker purple */
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  background: #3c1361;
+  transform: translateY(0);
+}
